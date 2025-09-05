@@ -4,9 +4,9 @@ import plotly.express as px
 from plotly.subplots import make_subplots
 import pandas as pd
 
-st.set_page_config(page_title="情報モラル・シミュレーター", page_icon="📱", layout="wide")
+st.set_page_config(page_title="情報モラル", page_icon="📱", layout="wide")
 
-st.title("情報モラル・シミュレーター")
+st.title("情報モラル")
 st.caption("Created by Dit-Lab.(Daiki ITO)")
 st.caption("Supported by Tomoaki ATSUMI")
 
