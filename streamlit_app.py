@@ -27,7 +27,7 @@ if 'progress' not in st.session_state:
 progress_bar = st.progress(st.session_state.progress)
 
 def update_progress():
-    st.session_state.progress = (st.session_state.current_step - 1) / 5
+    st.session_state.progress = st.session_state.current_step / 5
     progress_bar.progress(st.session_state.progress)
 
 def next_step():
