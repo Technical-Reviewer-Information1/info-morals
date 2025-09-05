@@ -252,38 +252,47 @@ elif st.session_state.current_step == 3:
         # フローチャートのノード
         fig.add_shape(
             type="rect", x0=0, y0=3, x1=2, y1=4,
-            line=dict(color="blue"), fillcolor="lightblue"
+            line=dict(color="#0984e3", width=3), fillcolor="white"
         )
-        fig.add_annotation(x=1, y=3.5, text="衝撃的な情報発見", showarrow=False, font=dict(size=12))
+        fig.add_annotation(x=1, y=3.5, text="<b>衝撃的な情報発見</b>", showarrow=False, 
+                          font=dict(size=14, color="#2d3436"))
         
         fig.add_shape(
             type="rect", x0=0, y0=2, x1=2, y1=3,
-            line=dict(color="green"), fillcolor="lightgreen"
+            line=dict(color="#00b894", width=3), fillcolor="white"
         )
-        fig.add_annotation(x=1, y=2.5, text="情報源を確認", showarrow=False, font=dict(size=12))
+        fig.add_annotation(x=1, y=2.5, text="<b>情報源を確認</b>", showarrow=False, 
+                          font=dict(size=14, color="#2d3436"))
         
         fig.add_shape(
             type="rect", x0=0, y0=1, x1=2, y1=2,
-            line=dict(color="orange"), fillcolor="lightyellow"
+            line=dict(color="#fdcb6e", width=3), fillcolor="white"
         )
-        fig.add_annotation(x=1, y=1.5, text="複数のソースで<br>クロスチェック", showarrow=False, font=dict(size=10))
+        fig.add_annotation(x=1, y=1.5, text="<b>複数のソースで<br>クロスチェック</b>", showarrow=False, 
+                          font=dict(size=13, color="#2d3436"))
         
         fig.add_shape(
             type="rect", x0=0, y0=0, x1=2, y1=1,
-            line=dict(color="purple"), fillcolor="lavender"
+            line=dict(color="#6c5ce7", width=3), fillcolor="white"
         )
-        fig.add_annotation(x=1, y=0.5, text="信頼できる場合のみ<br>シェア", showarrow=False, font=dict(size=10))
+        fig.add_annotation(x=1, y=0.5, text="<b>信頼できる場合のみ<br>シェア</b>", showarrow=False, 
+                          font=dict(size=13, color="#2d3436"))
         
-        # 矢印
-        fig.add_annotation(x=1, y=2.9, text="↓", showarrow=False, font=dict(size=20))
-        fig.add_annotation(x=1, y=1.9, text="↓", showarrow=False, font=dict(size=20))
-        fig.add_annotation(x=1, y=0.9, text="↓", showarrow=False, font=dict(size=20))
+        # 矢印（より見やすく）
+        fig.add_annotation(x=1, y=2.85, text="<b>↓</b>", showarrow=False, 
+                          font=dict(size=24, color="#74b9ff"))
+        fig.add_annotation(x=1, y=1.85, text="<b>↓</b>", showarrow=False, 
+                          font=dict(size=24, color="#74b9ff"))
+        fig.add_annotation(x=1, y=0.85, text="<b>↓</b>", showarrow=False, 
+                          font=dict(size=24, color="#74b9ff"))
         
         fig.update_layout(
-            title="情報確認のフローチャート",
+            title=dict(text="<b>情報確認のフローチャート</b>", font=dict(size=18, color="#2d3436")),
             xaxis=dict(range=[-0.5, 2.5], showgrid=False, showticklabels=False),
             yaxis=dict(range=[-0.5, 4.5], showgrid=False, showticklabels=False),
-            height=400
+            height=400,
+            plot_bgcolor='white',
+            paper_bgcolor='white'
         )
         
         st.plotly_chart(fig, use_container_width=True)
@@ -365,23 +374,6 @@ elif st.session_state.current_step == 4:
             自分で作成したものや、利用が許可されたフリー素材を使うのがルールです。
             """)
         
-        # 権利関係の説明図
-        rights_data = pd.DataFrame({
-            '権利の種類': ['著作権', '肖像権', '商標権', 'パブリシティ権'],
-            '保護対象': ['創作物', '個人の容姿・声', 'ブランド・商標', '有名人の価値'],
-            'リスクレベル': [90, 85, 95, 80]
-        })
-        
-        fig = px.bar(
-            rights_data, 
-            x='権利の種類', 
-            y='リスクレベル',
-            color='リスクレベル',
-            title="知的財産権の侵害リスク",
-            color_continuous_scale='Reds'
-        )
-        fig.update_layout(height=400)
-        st.plotly_chart(fig, use_container_width=True)
         
         # スコア表示
         fig_score = go.Figure(go.Indicator(
@@ -531,14 +523,16 @@ elif st.session_state.current_step == 5:
                 )
             
             # エコー（反響）
-            for i in range(5):
-                fig.add_trace(go.Scatter(
-                    x=[0.5, 3.5, 0.5, 3.5][i%4] + [2][i//4],
-                    y=[0.5, 0.5, 2.5, 2.5][i%4] + [1.5][i//4],
-                    mode='markers',
-                    marker=dict(size=8, color='lightblue'),
-                    showlegend=False
-                ))
+            echo_x = [0.5, 3.5, 0.5, 3.5, 2]
+            echo_y = [0.5, 0.5, 2.5, 2.5, 1.5]
+            fig.add_trace(go.Scatter(
+                x=echo_x,
+                y=echo_y,
+                mode='markers',
+                marker=dict(size=8, color='lightblue'),
+                showlegend=False,
+                name='エコー'
+            ))
             
             fig.update_layout(
                 xaxis=dict(range=[0, 4], showgrid=False, showticklabels=False),
