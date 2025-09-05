@@ -77,28 +77,28 @@ if st.session_state.current_step == 1:
     
     with col1:
         st.markdown("""
-        <div style="border: 2px solid #ff6b6b; border-radius: 10px; padding: 15px; background-color: #fff5f5;">
-        <h4>🔥 Scene 1</h4>
-        <p><strong>感情的なコメント</strong></p>
-        <p>友達への辛辣なコメントを見つけた時、どうする？</p>
+        <div style="border: 3px solid #ff6b6b; border-radius: 10px; padding: 20px; background-color: white; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <h4 style="color: #d63031; margin-bottom: 10px;">🔥 Scene 1</h4>
+        <p style="color: #2d3436; font-weight: bold; margin-bottom: 8px;">感情的なコメント</p>
+        <p style="color: #636e72; font-size: 14px; line-height: 1.4;">友達への辛辣なコメントを見つけた時、どうする？</p>
         </div>
         """, unsafe_allow_html=True)
     
     with col2:
         st.markdown("""
-        <div style="border: 2px solid #4ecdc4; border-radius: 10px; padding: 15px; background-color: #f0fdfc;">
-        <h4>📰 Scene 2</h4>
-        <p><strong>うわさ情報</strong></p>
-        <p>衝撃的なニュースが拡散されている。信じる？</p>
+        <div style="border: 3px solid #4ecdc4; border-radius: 10px; padding: 20px; background-color: white; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <h4 style="color: #00b894; margin-bottom: 10px;">📰 Scene 2</h4>
+        <p style="color: #2d3436; font-weight: bold; margin-bottom: 8px;">うわさ情報</p>
+        <p style="color: #636e72; font-size: 14px; line-height: 1.4;">衝撃的なニュースが拡散されている。信じる？</p>
         </div>
         """, unsafe_allow_html=True)
     
     with col3:
         st.markdown("""
-        <div style="border: 2px solid #45b7d1; border-radius: 10px; padding: 15px; background-color: #f0f9ff;">
-        <h4>🖼️ Scene 3</h4>
-        <p><strong>著作権・肖像権</strong></p>
-        <p>プロフィール画像、どれを選ぶのが正解？</p>
+        <div style="border: 3px solid #45b7d1; border-radius: 10px; padding: 20px; background-color: white; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <h4 style="color: #0984e3; margin-bottom: 10px;">🖼️ Scene 3</h4>
+        <p style="color: #2d3436; font-weight: bold; margin-bottom: 8px;">著作権・肖像権</p>
+        <p style="color: #636e72; font-size: 14px; line-height: 1.4;">プロフィール画像、どれを選ぶのが正解？</p>
         </div>
         """, unsafe_allow_html=True)
     
