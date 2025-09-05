@@ -114,18 +114,18 @@ elif st.session_state.current_step == 2:
     
     # SNS投稿風のボックス
     st.markdown("""
-    <div style="border: 1px solid #ddd; border-radius: 10px; padding: 20px; background-color: #fafafa; margin: 20px 0;">
-    <div style="display: flex; align-items: center; margin-bottom: 10px;">
-        <div style="width: 40px; height: 40px; background-color: #4CAF50; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; margin-right: 10px;">A</div>
-        <strong>友達Aさん</strong>
+    <div style="border: 2px solid #ddd; border-radius: 10px; padding: 20px; background-color: white; margin: 20px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <div style="display: flex; align-items: center; margin-bottom: 15px;">
+        <div style="width: 40px; height: 40px; background-color: #4CAF50; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; margin-right: 15px;">A</div>
+        <strong style="color: #2d3436; font-size: 16px;">友達Aさん</strong>
     </div>
-    <p style="font-size: 16px; line-height: 1.5;">新発売のゲーム、操作が難しすぎて全然楽しめない…😞</p>
-    <div style="border-top: 1px solid #eee; padding-top: 15px; margin-top: 15px;">
+    <p style="font-size: 16px; line-height: 1.5; color: #2d3436; margin-bottom: 20px;">新発売のゲーム、操作が難しすぎて全然楽しめない…😞</p>
+    <div style="border-top: 2px solid #eee; padding-top: 15px; margin-top: 15px;">
         <div style="display: flex; align-items: center; margin-bottom: 10px;">
-            <div style="width: 30px; height: 30px; background-color: #f44336; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; margin-right: 10px;">X</div>
-            <strong>知らない人</strong>
+            <div style="width: 30px; height: 30px; background-color: #f44336; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; margin-right: 15px;">X</div>
+            <strong style="color: #2d3436; font-size: 14px;">知らない人</strong>
         </div>
-        <p style="color: #666; font-size: 14px;">え、そんなのもクリアできないの？才能ないんじゃない？笑</p>
+        <p style="color: #636e72; font-size: 14px; line-height: 1.4;">え、そんなのもクリアできないの？才能ないんじゃない？笑</p>
     </div>
     </div>
     """, unsafe_allow_html=True)
@@ -193,19 +193,19 @@ elif st.session_state.current_step == 3:
     
     # バイラルな投稿風のボックス
     st.markdown("""
-    <div style="border: 2px solid #ff4444; border-radius: 10px; padding: 20px; background: linear-gradient(135deg, #ffeeee, #fff5f5); margin: 20px 0;">
-    <div style="display: flex; align-items: center; margin-bottom: 15px;">
-        <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #ff6b6b, #ee5a5a); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; margin-right: 10px;">⚡</div>
-        <strong style="color: #d63031;">Breaking News Today</strong>
+    <div style="border: 3px solid #ff4444; border-radius: 10px; padding: 25px; background-color: white; margin: 20px 0; box-shadow: 0 4px 12px rgba(255,68,68,0.2);">
+    <div style="display: flex; align-items: center; margin-bottom: 20px;">
+        <div style="width: 45px; height: 45px; background: linear-gradient(135deg, #ff6b6b, #ee5a5a); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; margin-right: 15px; font-size: 18px;">⚡</div>
+        <strong style="color: #d63031; font-size: 18px;">Breaking News Today</strong>
     </div>
-    <h3 style="color: #d63031; margin-bottom: 15px;">【超速報！】</h3>
-    <p style="font-size: 16px; line-height: 1.6; font-weight: bold;">人気ドリンク「クールサイダー」に、健康に害のある成分が含まれていることが判明！メーカーは隠蔽か？</p>
-    <div style="margin-top: 15px; padding: 10px; background-color: rgba(255,255,255,0.5); border-radius: 5px;">
-        <span style="color: #e17055; font-weight: bold;">#拡散希望</span>
+    <h3 style="color: #d63031; margin-bottom: 20px; font-size: 20px;">【超速報！】</h3>
+    <p style="font-size: 16px; line-height: 1.6; font-weight: bold; color: #2d3436; margin-bottom: 20px;">人気ドリンク「クールサイダー」に、健康に害のある成分が含まれていることが判明！メーカーは隠蔽か？</p>
+    <div style="margin-top: 15px; padding: 15px; background-color: #fff5f5; border-radius: 8px; border-left: 4px solid #ff6b6b;">
+        <span style="color: #d63031; font-weight: bold; font-size: 16px;">#拡散希望</span>
     </div>
-    <div style="margin-top: 15px; display: flex; gap: 20px;">
-        <span style="color: #666;">❤️ いいね：5.2万件</span>
-        <span style="color: #666;">🔄 リポスト：3.8万件</span>
+    <div style="margin-top: 20px; display: flex; gap: 30px;">
+        <span style="color: #636e72; font-weight: bold;">❤️ いいね：5.2万件</span>
+        <span style="color: #636e72; font-weight: bold;">🔄 リポスト：3.8万件</span>
     </div>
     </div>
     """, unsafe_allow_html=True)
@@ -316,23 +316,23 @@ elif st.session_state.current_step == 4:
     
     with col1:
         st.markdown("""
-        <div style="text-align: center; border: 2px solid #ddd; border-radius: 10px; padding: 20px; background-color: #f9f9f9;">
-        <h3>選択肢 A</h3>
-        <div style="width: 150px; height: 150px; background: linear-gradient(45deg, #ff6b6b, #4ecdc4); border-radius: 50%; margin: 20px auto; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: bold;">
+        <div style="text-align: center; border: 3px solid #ff6b6b; border-radius: 10px; padding: 25px; background-color: white; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <h3 style="color: #d63031; margin-bottom: 20px;">選択肢 A</h3>
+        <div style="width: 150px; height: 150px; background: linear-gradient(45deg, #ff6b6b, #4ecdc4); border-radius: 50%; margin: 20px auto; display: flex; align-items: center; justify-content: center; color: white; font-size: 20px; font-weight: bold; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">
         アニメ<br>キャラ
         </div>
-        <p><strong>大好きなアニメのキャラクター</strong></p>
+        <p style="color: #2d3436; font-size: 16px;"><strong>大好きなアニメのキャラクター</strong></p>
         </div>
         """, unsafe_allow_html=True)
     
     with col2:
         st.markdown("""
-        <div style="text-align: center; border: 2px solid #ddd; border-radius: 10px; padding: 20px; background-color: #f9f9f9;">
-        <h3>選択肢 B</h3>
-        <div style="width: 150px; height: 150px; background: linear-gradient(135deg, #667eea, #764ba2); border-radius: 50%; margin: 20px auto; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: bold;">
+        <div style="text-align: center; border: 3px solid #0984e3; border-radius: 10px; padding: 25px; background-color: white; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <h3 style="color: #0984e3; margin-bottom: 20px;">選択肢 B</h3>
+        <div style="width: 150px; height: 150px; background: linear-gradient(135deg, #667eea, #764ba2); border-radius: 50%; margin: 20px auto; display: flex; align-items: center; justify-content: center; color: white; font-size: 20px; font-weight: bold; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">
         風景<br>写真
         </div>
-        <p><strong>自分で撮影した風景写真</strong></p>
+        <p style="color: #2d3436; font-size: 16px;"><strong>自分で撮影した風景写真</strong></p>
         </div>
         """, unsafe_allow_html=True)
     
