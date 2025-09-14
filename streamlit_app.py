@@ -6,7 +6,7 @@ import pandas as pd
 
 st.set_page_config(page_title="情報モラル", page_icon="📱", layout="wide")
 
-st.title("情報モラル")
+st.title("情報モラル（pp.217-219）")
 st.caption("Created by Dit-Lab.(Daiki ITO)")
 st.caption("Supported by Tomoaki ATSUMI")
 
