@@ -3,7 +3,11 @@
  "title": "情報モラル",
  "pp": "pp.216-217",
  "lead": "SNSの投稿を実際に点検し、信ぴょう性の確かめ方やフィルターバブルのしくみを体験します。",
- "scripts": ["chart.js","terms.js","quiz.js","app.js"],
+ "scripts": [
+  "terms.js",
+  "quiz.js",
+  "app.js"
+ ],
  "use": {
   "class": [
    "STEP 1 の投稿チェックを、班ごとに理由を挙げながら行わせる。",
