@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>情報モラル｜情報Ⅰ共通テスト対策問題集</title>
+<meta name="description" content="SNSの投稿を実際に点検し、信ぴょう性の確かめ方やフィルターバブルのしくみを体験します。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 fill=%22%2315181c%22/%3E%3Ctext x=%2216%22 y=%2222%22 font-size=%2218%22 font-family=%22monospace%22 fill=%22%23fff%22 text-anchor=%22middle%22%3E01%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<header class="app-header">
+  <div class="inner">
+    <span class="eyebrow">第 8 章　情報社会　8-6</span>
+    <h1>情報モラル（pp.216-217）</h1>
+    <p class="lead">SNSの投稿を実際に点検し、信ぴょう性の確かめ方やフィルターバブルのしくみを体験します。</p>
+    <p class="credit">Created by Dit-Lab.(Daiki ITO)　/　Supported by Tomoaki ATSUMI</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="step" id="step1">
+    <h2><span class="no">STEP 1</span>この投稿、大丈夫？</h2>
+    <p class="desc">投稿をクリックすると、どこに問題があるかが出ます。まず自分で考えてみましょう。</p>
+    <div class="panel">
+      <div id="postBox"></div>
+      <div class="note" id="postNote" style="margin-top:12px"></div>
+    </div>
+  </section>
+
+  <section class="step" id="step2">
+    <h2><span class="no">STEP 2</span>SNS・メール利用の注意（問1）</h2>
+    <p class="desc">⓪〜⑤のうち、適当なものは2つです。1つずつ判定しましょう。</p>
+    <div class="panel">
+      <div id="jBox"></div>
+      <div class="note" id="jNote" style="margin-top:12px"></div>
+    </div>
+  </section>
+
+  <section class="step" id="step3">
+    <h2><span class="no">STEP 3</span>おすすめ表示のしくみ（フィルターバブル）</h2>
+    <p class="desc">「よく見るもの」を選ぶと、おすすめがどう変わるかを見てみましょう。</p>
+    <div class="panel">
+      <div class="btn-row" style="flex-wrap:wrap" id="tasteBtns"></div>
+      <div class="bubble" style="margin-top:12px">
+        <strong>あなたのおすすめ欄</strong>
+        <div class="feed" id="feedBox"></div>
+      </div>
+      <div class="note" id="feedNote" style="margin-top:12px"></div>
+    </div>
+  </section>
+
+  <section class="step" id="step4">
+    <h2><span class="no">STEP 4</span>信ぴょう性の確かめ方とサービス利用（問2・問3）</h2>
+    <div class="panel">
+      <div id="q2Box"></div>
+      <div class="note" id="q2Note" style="margin-top:10px"></div>
+      <hr class="sep">
+      <div id="q3Box"></div>
+      <div class="note" id="q3Note" style="margin-top:10px"></div>
+    </div>
+  </section>
+
+  <section class="step" id="glossary">
+    <h2><span class="no">用語</span>この節で出てくることば</h2>
+    <div class="panel"><div id="glossBox"></div></div>
+  </section>
+
+  <section class="step" id="wrap">
+    <h2><span class="no">まとめ</span>おさえておきたいこと</h2>
+    <div class="panel">
+      <ul class="bullets">
+        <li>信頼できる相手とのやりとりでも、<strong>なりすまし</strong>の可能性を頭に入れておく。</li>
+        <li>匿名の投稿でも、<strong>本人が特定されることはある</strong>（発信者情報開示など）。</li>
+        <li>アニメのキャラクター画像を無断でプロフィール画像にするのは<strong>著作権の侵害</strong>。芸能人にも<strong>肖像権</strong>がある。</li>
+        <li>信ぴょう性は、検索順位・ベストアンサー・いいね数では判断できない。<strong>複数の情報源で比較・検証</strong>する。</li>
+        <li>おすすめ表示は履歴に基づくため、<strong>偏った情報だけ</strong>になることがある（フィルターバブル）。</li>
+        <li>プロフィールやアイコンは<strong>いくらでも偽装できる</strong>ので、信用の判断材料にはならない。</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="step">
+    <h2><span class="no">活用</span>授業・探究での使い方</h2>
+    <div class="use-note">
+      <h3>授業で</h3>
+      <ul>
+        <li>STEP 1 の投稿チェックを、班ごとに理由を挙げながら行わせる。</li>
+        <li>STEP 3 のフィルターバブル体験で、なぜ同じような情報ばかり見えるのかを説明する。</li>
+        <li>STEP 2 の判定は、誤りの選択肢をどう直せば正しくなるかを言わせる。</li>
+      </ul>
+      <h3 style="margin-top:12px">探究で</h3>
+      <ul>
+        <li>自分のおすすめ表示にどんな傾向があるかを観察する。</li>
+        <li>炎上事例を調べ、どの時点で防げたかを考える。</li>
+        <li>ステルスマーケティングの規制について調べる。</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="app-footer">
+  情報Ⅰ 共通テスト対策問題集（技術評論社）連動Webアプリ　/　Created by Dit-Lab.(Daiki ITO)　/　Supported by Tomoaki ATSUMI
+</footer>
+
+<script src="js/tools.js"></script>
+<script src="js/chart.js"></script>
+<script src="js/terms.js"></script>
+<script src="js/quiz.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
